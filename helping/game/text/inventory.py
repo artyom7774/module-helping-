@@ -25,5 +25,15 @@ class Inventory(object):
 
         self.inventory = items
 
+    def have(self, name: str, count: int) -> bool:
+        for element in self.inventory:
+            if element.get('name') == name:
+                if element.get('count') == count:
+                    return True
+                else:
+                    return False
+        else:
+            return False
+
     def get(self) -> list:
         return self.inventory

@@ -1,0 +1,17 @@
+помощь:
+
+    весь код сделан для использования from helping import *
+
+    основное:
+
+        создать инвентарь: inventory = Inventory(max_item = 10, inventory = [])
+        создать персонажа: player = Player(health = 10, max_health = 10, damage = 4, armor = 2, money = 5)
+        создать базу (все блоки будут находиться в ней): base = Base(blocks = [])
+
+    создать предмет:
+
+        *имя предмета* = Item(name='*имя предмета*', display_name='*выводимое имя*', rare=*редкость*).get()
+
+    создать базу:
+
+        *имя* = Place(inventory = inventory, get=[*предмет*, *предмет*], настройки helping/progress.py)
